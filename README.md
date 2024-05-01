@@ -1,9 +1,3 @@
----
-title: "Graduation| Latex OCR by Pytorch"
-date: "2023-11-07"
-tags: ["CS"]
----
-
 
 <div class="image-container" style="text-align: center;line-height: 0;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="VS Code" width="100" height="auto" style="vertical-align: middle;"/>
