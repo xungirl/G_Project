@@ -1,17 +1,17 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <ApiTest />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//import HelloWorld from './components/HelloWorld.vue'
 import ApiTest from './components/ApiTest.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    //HelloWorld,
     ApiTest // 注册 ApiTest 组件
   }
 }
@@ -27,3 +27,4 @@ export default {
   margin-top: 60px;
 }
 </style>
+
