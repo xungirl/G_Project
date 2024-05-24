@@ -1,6 +1,10 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
   <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
+  <div class="image-container" style="text-align: center;line-height: 0;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="VS Code" width="100" height="auto" style="vertical-align: middle;"/>
+    <scan> + </scan>
+    <img src="https://tuchuang-1312256370.cos.ap-shanghai.myqcloud.com/scanner%20(1).png" alt="VS Code" width="80" height="auto" style="vertical-align: middle;"/>
+</div>
   <ApiTest />
 </template>
 
