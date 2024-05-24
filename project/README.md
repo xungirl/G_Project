@@ -1,4 +1,4 @@
-# ocrvue
+# project
 
 ## Project setup
 ```

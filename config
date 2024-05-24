@@ -1,0 +1,5 @@
+Host aliyun-server
+    HostName 47.100.211.167
+    User root
+    IdentityFile F:\aliyun.pem
+    Port 22
