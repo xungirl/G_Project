@@ -12,28 +12,28 @@
 </template>
 
 <script>
-import axios from 'axios';
+import axios from 'axios'
 
 export default {
-  data() {
+  data () {
     return {
       apiData: '',
       loading: false,
       error: ''
-    };
+    }
   },
   methods: {
-    async fetchData() {
-      this.loading = true;
+    async fetchData () {
+      this.loading = true
       try {
-        const response = await axios.get('/api'); // 使用相对路径
-        this.apiData = response.data;
+        const response = await axios.get('/api') // 使用相对路径
+        this.apiData = response.data
       } catch (error) {
-        this.error = error.message || 'Error fetching data from API';
+        this.error = error.message || 'Error fetching data from API'
       } finally {
-        this.loading = false;
+        this.loading = false
       }
     }
   }
-};
+}
 </script>

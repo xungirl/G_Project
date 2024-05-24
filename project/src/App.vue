@@ -6,17 +6,23 @@
     <img src="https://tuchuang-1312256370.cos.ap-shanghai.myqcloud.com/scanner%20(1).png" alt="VS Code" width="80" height="auto" style="vertical-align: middle;"/>
 </div>
   <ApiTest />
+  <div id="app">
+    <image-uploader></image-uploader>
+  </div>
+
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import ApiTest from './components/ApiTest.vue'
+import ImageUploader from './components/ImageUploader.vue'
 
 export default {
   name: 'App',
   components: {
-    //HelloWorld,
-    ApiTest // 注册 ApiTest 组件
+    // HelloWorld,
+    ApiTest, // 注册 ApiTest 组件
+    ImageUploader
   }
 }
 </script>
@@ -31,4 +37,3 @@ export default {
   margin-top: 60px;
 }
 </style>
-
