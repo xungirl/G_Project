@@ -1,5 +1,5 @@
 <template>
-  <div class="uploader">
+  <div class="uploader box">
     <el-upload
       class="upload-demo"
       drag
@@ -42,11 +42,14 @@ export default {
 </script>
 
 <style>
+
 .upload-demo {
   display: block;
   width: 400px;
   margin: 30px auto;
+
 }
+/*
 .el-upload {
   border: 2px dashed #3cbbc0;
   border-radius: 6px;
@@ -58,5 +61,25 @@ export default {
 }
 .el-upload:hover {
   border-color: #409eff;
+}*/
+.box {
+  position: relative;
+  transform-style: preserve-3d;
+  border-radius: 2px;
+  width: 400px;
+  display: block;
+  width: 400px;
+  margin: 30px auto;
 }
+.box::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700);
+  filter: blur(5px);
+  transform: translate3d(0px,0px,-1px);
+  border-radius: inherit;
+  pointer-events: none;
+}
+
 </style>
