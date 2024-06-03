@@ -1,13 +1,6 @@
 <template>
   <div>
-    <h1>Vue Page with API Integration</h1>
-    <button @click="fetchData">Fetch Data</button>
-    <div v-if="loading">Loading...</div>
-    <div v-else-if="error">Error: {{ error }}</div>
-    <div v-else>
-      <h2>Data from API:</h2>
-      <p>{{ apiData }}</p>
-    </div>
+
   </div>
 </template>
 
