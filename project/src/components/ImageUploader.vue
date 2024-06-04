@@ -16,7 +16,7 @@
           <i class="fas fa-image icon-large" @click="openGallery"></i>
         </span>
         <span v-else>
-          <i class="fas fa-file-upload icon-large"></i>
+          <i class="fa-solid fa-cloud-arrow-up icon-large"></i>
         </span>
       </div>
     </el-upload>
