@@ -78,7 +78,7 @@ export default {
     },
     async uploadFile (formData) {
       try {
-        const response = await axios.post(this.uploadUrl, formData)
+        const response = await axios.post('/api/predict/', formData)
         this.handleSuccess(response.data)
       } catch (error) {
         this.handleError(error)
