@@ -5,26 +5,38 @@
     <scan><i class="fa-solid fa-plus"></i></scan>
     <img src="https://tuchuang-1312256370.cos.ap-shanghai.myqcloud.com/Icon_%E5%85%AC%E5%BC%8F%E5%AE%9A%E4%B9%89.svg" alt="VS Code" width="80" height="auto" style="vertical-align: middle;"/>
 </div>
-  <ApiTest />
-  <div id="app">
-    <image-uploader></image-uploader>
-  </div>
+
+<mode-selector @mode-selected="mode = $event"></mode-selector>
+
+<div v-if="mode === 'image'">
+  <image-uploader />
+</div>
+
+<div v-if="mode === 'handwriting'">
+  <handwriting-canvas />
+</div>
 
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import ApiTest from './components/ApiTest.vue'
+// import ApiTest from './components/ApiTest.vue'
 import ImageUploader from './components/ImageUploader.vue'
-// import IconGrid from './components/IconGrid.vue'
+import ModeSelector from './components/ModeSelector.vue'
+import HandwritingCanvas from './components/HandwritingCanvas.vue'
 
 export default {
   name: 'App',
   components: {
-    // HelloWorld,
-    ApiTest, // 注册 ApiTest 组件
-    ImageUploader
-    // IconGrid
+    // ApiTest,
+    ImageUploader,
+    ModeSelector,
+    HandwritingCanvas
+  },
+  data () {
+    return {
+      mode: 'image' // 默认是图片识别模式
+    }
   }
 }
 </script>
@@ -37,5 +49,17 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.image-container {
+  margin-bottom: 20px;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+}
+canvas {
+  display: block;
+  margin: 20px auto;
+  /*border: 1px solid #000;*/
 }
 </style>
