@@ -1,7 +1,7 @@
 <template>
   <div class="uploader box">
     <canvas ref="handwritingCanvas" class="canvas"></canvas>
-    <el-button type="primary" @click="submitHandwriting">提交</el-button>
+    <el-button type="primary" @click="submitHandwriting">Submit</el-button>
     <div v-if="recognizedFormula">
       <el-card>
         <h3>Latex Formula:</h3>
